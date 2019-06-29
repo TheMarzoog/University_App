@@ -29,8 +29,6 @@ public class Course {
         setDate.set(Calendar.DAY_OF_MONTH, day);
         setDate.set(Calendar.HOUR_OF_DAY, hour);
         setDate.set(Calendar.MINUTE, minutes);
-
-
     }
 
     public void printCourseTitle() {
