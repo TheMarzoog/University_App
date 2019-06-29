@@ -1,7 +1,7 @@
 package software.eng.courses;
 
-import software.eng.Lecturer;
-import software.eng.Student;
+import software.eng.Person.Lecturer;
+import software.eng.Person.Student;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
