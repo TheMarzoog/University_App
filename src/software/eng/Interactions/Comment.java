@@ -1,13 +1,12 @@
 package software.eng.Interactions;
 
-import software.eng.Person.Person;
-
 public class Comment extends Interaction implements Likeable {
 
+    public Interaction interaction;
     public String comment;
 
-    public Comment(Person initiator, String comment) {
-        super(initiator);
+    public Comment(Interaction interaction, String comment) {
+        this.interaction = interaction;
         this.comment = comment;
     }
 

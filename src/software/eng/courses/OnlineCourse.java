@@ -1,9 +1,7 @@
 package software.eng.courses;
 
 
-
-
-public class OnlineCourse extends Course{
+public class OnlineCourse extends Course {
 
     private String url;
 
@@ -11,5 +9,11 @@ public class OnlineCourse extends Course{
         super(title);
         this.url = url;
 
+    }
+
+    @Override
+    public void printCourseTitle(){
+        super.printCourseTitle();
+        System.out.println(url);
     }
 }

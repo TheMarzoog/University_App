@@ -1,5 +1,7 @@
 package software.eng.courses;
 
+
+import software.eng.Interactions.Interaction;
 import software.eng.Person.Lecturer;
 import software.eng.Person.Student;
 
@@ -10,14 +12,14 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 
-public class Course {
+public class Course extends Interaction {
     private String title;
     public Lecturer lecturer;
     public List<Date> date;
     public List<Student> attendees;
-    private static DateFormat dateFormat = new SimpleDateFormat("dd/MM/YYYY");
+    private static DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-dd HH:mm");
 
-    public Course(String title) {
+    Course(String title) {
         this.title = title;
     }
 
@@ -33,5 +35,10 @@ public class Course {
 
     public void printCourseTitle() {
         System.out.println(title);
+    }
+
+    @Override
+    public void printInteraction(){
+        System.out.println("Like or comment");
     }
 }

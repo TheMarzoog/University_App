@@ -1,11 +1,11 @@
 package software.eng.Interactions;
 
-import software.eng.Person.Person;
-
 public class Like extends Interaction {
 
-    public Like(Person initiator) {
-        super(initiator);
+    public Interaction interaction;
+
+    public Like(Interaction interaction) {
+        this.interaction = interaction;
     }
 
     @Override
